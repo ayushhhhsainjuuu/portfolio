@@ -39,3 +39,15 @@
 .links a:hover {
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 28px;
+  }
+  .links {
+    gap: 1.2rem;
+  }
+  .links a {
+    font-size: 11px;
+  }
+}

@@ -6,7 +6,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main>
-      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 clamp(1rem, 4vw, 2rem)" }}>
         <Hero />
         <hr style={{ border: "none", borderTop: "0.5px solid var(--border)" }} />
         <About />

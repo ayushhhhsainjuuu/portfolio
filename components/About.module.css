@@ -7,7 +7,7 @@
 }
 
 .label {
-  font-size: 41px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
@@ -38,4 +38,12 @@
   border: 0.5px solid var(--border);
   color: var(--muted);
   padding: 5px 12px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 3rem 0;
+  }
 }
