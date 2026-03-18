@@ -68,6 +68,7 @@
   background: var(--accent-light);
   overflow: hidden;
   flex-shrink: 0;
+  position: relative;
 }
 
 .previewImg {
