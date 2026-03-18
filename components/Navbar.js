@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.inner}>
-        <span className={styles.name}>Ayush</span>
+        <span className={styles.name}>Ayush Sainju</span>
         <div className={styles.links}>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
