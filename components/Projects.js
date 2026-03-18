@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import styles from "./Projects.module.css";
+import Image from "next/image";
 
 const projects = [
   {
@@ -8,23 +9,23 @@ const projects = [
     title: "CPRG 306 — Next.js App",
     desc: "Shopping List and Meal Ideas app with TheMealDB API integration, built as a weekly assignment project.",
     stack: ["Next.js", "React", "TheMealDB"],
-    github: "https://github.com/YOUR_USERNAME/cprg306-assignments",
+    github: "https://github.com/ayushhhhsainjuuu/cprg306-assignments",
     image: "/images/cprg306.png",
   },
   {
     num: "02",
     title: "Diet Analysis Dashboard",
     desc: "Cloud-connected nutrition tracker with Azure Function backend, Terraform infrastructure, and data visualizations.",
-    stack: ["Azure", "Python", "Terraform", "GitHub Actions"],
-    github: "https://github.com/YOUR_USERNAME/cloudcomputing_assignment1",
+    stack: ["Azure", "Python", "GitHub Actions"],
+    github: "https://github.com/ayushhhhsainjuuu/cloudcomputing_assignment1",
     image: "/images/diet-analysis.png",
   },
   {
     num: "03",
     title: "Object Detection",
     desc: "Computer vision model that detects and classifies objects in images using machine learning techniques.",
-    stack: ["Python", "Jupyter", "CV / ML"],
-    github: "https://github.com/YOUR_USERNAME/object-detection",
+    stack: ["Python", "CV / ML"],
+    github: "https://github.com/ayushhhhsainjuuu/object-detection",
     image: "/images/object-detection.png",
   },
   {
@@ -32,7 +33,7 @@ const projects = [
     title: "Sentiment Analysis",
     desc: "NLP project that classifies the sentiment of text input using machine learning.",
     stack: ["Python", "Jupyter", "NLP"],
-    github: "https://github.com/YOUR_USERNAME/sentiment-analysis",
+    github: "https://github.com/ayushhhhsainjuuu/sentiment-analysis",
     image: "/images/sentiment-analysis.png",
   },
   {
@@ -40,7 +41,7 @@ const projects = [
     title: "Tic-Tac-Toe",
     desc: "A clean, logic-driven implementation of the classic game — well-structured and fully playable.",
     stack: ["Python", "Jupyter"],
-    github: "https://github.com/YOUR_USERNAME/tiktaktoe",
+    github: "https://github.com/ayushhhhsainjuuu/tiktaktoe",
     image: "/images/tictactoe.png",
   },
   {
@@ -48,7 +49,7 @@ const projects = [
     title: "Portfolio Website",
     desc: "This site — designed and built in Next.js with a clean slate blue aesthetic and smooth scroll.",
     stack: ["Next.js", "React", "CSS Modules"],
-    github: "https://github.com/YOUR_USERNAME/portfolio",
+    github: "https://github.com/ayushhhhsainjuuu/portfolio",
     image: "/images/portfolio.png",
   },
 ];
@@ -76,15 +77,19 @@ export default function Projects() {
       <div className={styles.trackWrapper} ref={trackRef} onScroll={handleScroll}>
         <div className={styles.track}>
           {projects.map((p) => (
-            
+            <a
               key={p.num}
               href={p.github}
               target="_blank"
-              rel="noopener noreferrer"
               className={styles.card}
             >
               <div className={styles.preview}>
-                <img src={p.image} alt={p.title} className={styles.previewImg} />
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
               </div>
               <div className={styles.body}>
                 <p className={styles.num}>{p.num}</p>
