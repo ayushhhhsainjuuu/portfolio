@@ -1,0 +1,19 @@
+.footer {
+  border-top: 0.5px solid var(--border);
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner p {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
