@@ -12,6 +12,7 @@ export default function Home() {
       <hr style={{ border: "none", borderTop: "0.5px solid var(--border)" }} />
       <Projects />
       <hr style={{ border: "none", borderTop: "0.5px solid var(--border)" }} />
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 4rem" }}></div>
       <Contact />
     </main>
   );
