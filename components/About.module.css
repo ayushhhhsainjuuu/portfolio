@@ -1,0 +1,41 @@
+.about {
+  padding: 4.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 4px;
+}
+
+.content {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--dark);
+}
+
+.content p + p {
+  margin-top: 1.2rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.tag {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 0.5px solid var(--border);
+  color: var(--muted);
+  padding: 5px 12px;
+}
