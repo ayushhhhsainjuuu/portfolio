@@ -6,6 +6,22 @@ import Image from "next/image";
 const projects = [
   {
     num: "01",
+    title: "OnTrack",
+    desc: "Full-stack workforce management platform for cleaning companies, built with Next.js and five Express microservices (auth, clock, scheduling, leave, AI). Features role-based dashboards, real-time notifications, and full CI/CD deployment to Azure using Docker and GitHub Actions.",
+    stack: ["Next.js", "Express", "Azure", "Docker"],
+    github: "https://github.com/ayushhhhsainjuuu/ontrack",
+    image: "/images/ontrack.png",
+  },
+  {
+    num: "02",
+    title: "WildLens",
+    desc: "IoT wildlife monitoring system using a Raspberry Pi 4, PIR sensor, and USB webcam to detect and classify animals at the edge with TFLite. Captured data syncs to Azure Blob Storage and Azure AI Foundry, with a Next.js dashboard for viewing sightings.",
+    stack: ["Raspberry Pi", "TFLite", "Azure", "Next.js"],
+    github: "https://github.com/ayushhhhsainjuuu/wildlens",
+    image: "/images/wildlens.png",
+  },
+  {
+    num: "03",
     title: "CPRG 306 — Next.js App",
     desc: "Shopping List and Meal Ideas app with TheMealDB API integration, built as a weekly assignment project.",
     stack: ["Next.js", "React", "TheMealDB"],
@@ -13,7 +29,7 @@ const projects = [
     image: "/images/cprg306.png",
   },
   {
-    num: "02",
+    num: "04",
     title: "Diet Analysis Dashboard",
     desc: "Cloud-connected nutrition tracker with Azure Function backend, Terraform infrastructure, and data visualizations.",
     stack: ["Azure", "Python", "GitHub Actions"],
@@ -21,7 +37,7 @@ const projects = [
     image: "/images/diet-analysis.png",
   },
   {
-    num: "03",
+    num: "05",
     title: "Object Detection",
     desc: "Computer vision model that detects and classifies objects in images using machine learning techniques.",
     stack: ["Python", "CV / ML"],
@@ -29,7 +45,7 @@ const projects = [
     image: "/images/object-detection.png",
   },
   {
-    num: "04",
+    num: "06",
     title: "Sentiment Analysis",
     desc: "NLP project that classifies the sentiment of text input using machine learning.",
     stack: ["Python", "Jupyter", "NLP"],
@@ -37,20 +53,12 @@ const projects = [
     image: "/images/sentiment-analysis.png",
   },
   {
-    num: "05",
+    num: "07",
     title: "Tic-Tac-Toe",
     desc: "A clean, logic-driven implementation of the classic game — well-structured and fully playable.",
     stack: ["Python", "Jupyter"],
     github: "https://github.com/ayushhhhsainjuuu/tiktaktoe",
     image: "/images/tictactoe.png",
-  },
-  {
-    num: "06",
-    title: "Portfolio Website",
-    desc: "This site — designed and built in Next.js with a clean slate blue aesthetic and smooth scroll.",
-    stack: ["Next.js", "React", "CSS Modules"],
-    github: "https://github.com/ayushhhhsainjuuu/portfolio",
-    image: "/images/portfolio.png",
   },
 ];
 
